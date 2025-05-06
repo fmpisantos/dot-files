@@ -11,3 +11,4 @@ chmod +x ~/.config/tmux/init.sh && ~/.config/tmux/init.sh
 git clone git@github.com:fmpisantos/hypr.git ~/.config/hypr
 
 sudo pacman -R kitty
+echo "set completion-ignore-case On" >> ~/.inputrc

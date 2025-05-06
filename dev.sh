@@ -2,7 +2,8 @@
 
 sudo pacman -Syu
 sudo pacman -S base-devel gcc ripgrep
-sudo pacman -S --noconfirm --needed git firefox neovim ghostty paku fzf rofi-wayland laygit copyq tmux
+sudo pacman -S --noconfirm --needed git firefox neovim ghostty paku fzf rofi-wayland laygit copyq tmux chromium
+sudo pacman -S greetd-tuigreet
 sudo pacman -S --noconfirm --needed ttf-font-awesome waybar ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols
 
 git clone git@github.com:fmpisantos/ghostty.git ~/.config/ghostty
@@ -11,6 +12,8 @@ echo "alias vim='nvim'" >> ~/.bashrc
 git clone git@github.com:fmpisantos/tmux.git ~/.config/tmux
 chmod +x ~/.config/tmux/init.sh && ~/.config/tmux/init.sh
 git clone git@github.com:fmpisantos/hypr.git ~/.config/hypr
+git clone git@github.com:fmpisantos/greetd.git ~/.config/greetd
+chmod +x ~/.config/greetd/init.sh && ~/.config/greetd/init.sh
 
 sudo pacman -R kitty
 echo "set completion-ignore-case On" >> ~/.inputrc

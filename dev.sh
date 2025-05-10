@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-sudo pacman -Syu
-sudo pacman -S base-devel gcc ripgrep
+sudo pacman -Syu --noconfirm --needed
+sudo pacman -S --noconfirm --needed base-devel gcc ripgrep btop
 sudo pacman -S --noconfirm --needed git firefox neovim ghostty paku fzf rofi-wayland laygit copyq tmux chromium
-sudo pacman -S greetd-tuigreet
+sudo pacman -S --noconfirm --needed greetd-tuigreet
+sudo pacman -S --noconfirm --needed hyprlock
 sudo pacman -S --noconfirm --needed ttf-font-awesome waybar ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols
 
 git clone git@github.com:fmpisantos/ghostty.git ~/.config/ghostty
